@@ -9,6 +9,7 @@ import {
   MessageSquare,
   Music,
   VideoIcon,
+  Sparkles,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 
@@ -56,10 +57,13 @@ const DashboardPage = () => {
     <div>
       <div className="mb-8 space-y-4">
         <h2 className="text-2xl md:text-4xl font-bold text-center">
-          Explore the power of AI
+          Paleta Playground
+          <div className="flex items-center justify-center">
+            <Sparkles />
+          </div>
         </h2>
         <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
-          Chat with the smartest AI - Experience the power of AI
+          Experience the power of AI
         </p>
       </div>
       <div className="px-4 md:ox-20 lg:px-32 space-y-4">
