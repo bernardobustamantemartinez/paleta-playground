@@ -5,7 +5,7 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import OpenAI from "openai";
 import Heading from "@/components/ui/heading";
-import { MessageSquare, Sparkles } from "lucide-react";
+import { MessageSquare, Sparkles, User } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { formSchema } from "./constants";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
@@ -13,7 +13,6 @@ import { Empty } from "@/components/empty";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
-import { Chat } from "openai/resources/index.mjs";
 import { cn } from "@/lib/utils";
 import { Loader } from "@/components/loader";
 import { UserAvatar } from "@/components/user-avatar";
@@ -22,9 +21,7 @@ import { BotAvatar } from "@/components/bot-avatar";
 const ConversationPage = () => {
   const router = useRouter();
 
-  const [messages, setMessages] = useState<
-    OpenAI.Chat.CreateChatCompletionRequestMessage[]
-  >([]);
+  const [messages, setMessages] = useState<OpenAI.ChatCompletionMessage[]>([]);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -129,12 +126,12 @@ const ConversationPage = () => {
                 key={message.content}
                 className={cn(
                   "p-8 w-full flex items-start gap-x-8 rounded-lg",
-                  message.role === "user"
-                    ? "bg-white border border-black/10"
-                    : "bg-muted"
+                  message.role === "assistant"
+                    ? "bg-muted"
+                    : "bg-white border border-black/10"
                 )}
               >
-                {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
+                {message.role === "assistant" ? <BotAvatar /> : <UserAvatar />}
                 <p className="text-sm">{message.content}</p>
               </div>
             ))}
