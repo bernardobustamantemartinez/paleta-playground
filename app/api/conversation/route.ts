@@ -10,7 +10,7 @@ const openai = new OpenAI({
 const instructionMessage: ChatCompletionMessageParam = {
   role: "system",
   content:
-    "Answer questions as short and quickly as possible. You must do it under 75 tokens.",
+    "Answer questions as short and quickly as possible. You must do it under 150 tokens.",
 };
 
 export async function POST(req: Request) {
