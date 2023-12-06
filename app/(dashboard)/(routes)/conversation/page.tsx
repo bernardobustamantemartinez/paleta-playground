@@ -92,7 +92,7 @@ const ConversationPage = () => {
                             focus-visibile:ring-transparent
                         "
                         disabled={isLoading}
-                        placeholder="How do I convert U.S Dollars to Mexican Pesos?"
+                        placeholder="What can I help you with?"
                         {...field}
                       />
                     </FormControl>
