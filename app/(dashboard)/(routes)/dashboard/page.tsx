@@ -22,11 +22,11 @@ const tools = [
     href: "/conversation",
   },
   {
-    label: "Music Generation",
-    icon: Music,
-    color: "text-emerald-500",
-    bgColor: "bg-emerald-500/10",
-    href: "/music",
+    label: "Code Generation",
+    icon: Code,
+    color: "text-green-500",
+    bgColor: "bg-green-500/10",
+    href: "/code",
   },
   {
     label: "Image Generation",
@@ -43,11 +43,11 @@ const tools = [
     href: "/orange",
   },
   {
-    label: "Code Generation",
-    icon: Code,
-    color: "text-green-500",
-    bgColor: "bg-green-500/10",
-    href: "/code",
+    label: "Music Generation",
+    icon: Music,
+    color: "text-emerald-500",
+    bgColor: "bg-emerald-500/10",
+    href: "/music",
   },
 ];
 
