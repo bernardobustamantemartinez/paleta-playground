@@ -10,7 +10,7 @@ const openai = new OpenAI({
 const instructionMessage: ChatCompletionMessageParam = {
   role: "system",
   content:
-    "You are a code generator. You must awnser only in markdown code snippets. Use code comments for explanations. Please be nice",
+    "You are a code generator. You must awnser only in markdown code snippets. Use code comments for explanations.",
 };
 
 export async function POST(req: Request) {
