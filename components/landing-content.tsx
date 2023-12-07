@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const testimonials = [
   {
-    name: "Antonio",
-    avatar: "A",
+    name: "Bernardo",
+    avatar: "B",
     title: "Software Engineer",
     description:
       "My one stop shop for leveraging AI models from OpenAI, Replicate, and others.",
@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     name: "Marianela",
-    avatar: "A",
+    avatar: "M",
     title: "Creative Director",
     description:
       "Paleta has been my most used tool when it comes to drafting up mood boards for my clients.",
