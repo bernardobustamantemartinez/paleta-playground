@@ -40,7 +40,7 @@ const tools = [
     icon: VideoIcon,
     color: "text-orange-500",
     bgColor: "bg-orange-500/10",
-    href: "/orange",
+    href: "/video",
   },
   {
     label: "Music Generation",
