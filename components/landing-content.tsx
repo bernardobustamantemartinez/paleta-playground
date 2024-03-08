@@ -14,7 +14,8 @@ const testimonials = [
     name: "Alejandro",
     avatar: "A",
     title: "Graphic Designer",
-    description: "I can quickly mock images for clients using generative AI.",
+    description:
+      "I can quickly mock images for clients using generative AI as a starting point.",
   },
   {
     name: "Marianela",
